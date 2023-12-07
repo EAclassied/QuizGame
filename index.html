@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIZ Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  
+  <link rel="stylesheet" href="main.css">
+  
+
+</head>
+
+
+
+  <body class="flex">
+      <a href="./index.html"><img id="logo" src="./media/LOGO.jpg" alt="logo">
+  </a>
+
+    <div class="wrapper">
+    <div class="quiz-container">
+      <div class="quiz-head">
+        <h1 class="quiz-title">Quiz Game</h1>
+        <div class="quiz-box flex">
+            <span id="10-questions">10 total questions</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-body">
+      <h2 class="label-customize" id="custom-question">Customize your own quiz!</h2>
+      <ul class="quiz-choose">
+        <div class="choose">
+          <label for="quiz-categories">Choose a Category:</label>
+          <select name="quiz-categories" id="quiz-category">
+            <option value="9">General Knowledge</option>
+            <option value="14">TV Media</option>
+            <option value="18">Computers</option>
+            <option value="20">Mythology</option>
+            <option value="21">Sports</option>
+            <option value="15">Video Games</option>
+            <option value="29">Comics</option>
+          </select>
+        </div>
+          
+        
+        <div class="choose">
+          <label for="quiz-difficulty">Choose Difficulty:</label>
+          <select name="difficulty" id="quiz-difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+          <div class="choose">
+            <label for="quiz-number">Choose Number of Questions:</label>
+            <select name="number" id="quiz-number">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+            </select>
+              
+          </div>
+          
+        
+      </ul>
+    </div>
+
+    <div class="home-foot">
+      <button id="play" onclick="saveValues()">Let's go!</button>
+      
+    </div>
+  </div>
+<script defer src="script.js"></script>
+</body>
+</html>
